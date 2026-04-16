@@ -80,7 +80,7 @@ pnpm start
 
 Replace the placeholder below with your repository URL once the project is published:
 
-https://github.com/your-username/jacinto-person-search
+[https://github.com/your-username/jacinto-person-search](https://github.com/michaeljosh39-commits/person-search-app-mcp)
 
 ## Notes
 

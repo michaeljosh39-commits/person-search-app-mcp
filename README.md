@@ -2,6 +2,12 @@
 
 A full-stack Next.js project for managing person records with search, create, update, and delete functionality.
 
+https://person-search-app-mcp-seven.vercel.app/
+
+<img width="2525" height="1469" alt="image" src="https://github.com/user-attachments/assets/de6641bc-75db-4cd2-8cec-697a0246a1a9" />
+<img width="2552" height="1467" alt="image" src="https://github.com/user-attachments/assets/51bd8218-465a-4e9e-a380-55d7e93e0c6c" />
+
+
 ## Overview
 
 This app uses the Next.js 16 App Router with server actions for CRUD operations and Prisma ORM for database access. It includes a responsive UI, validation with Zod, and a simple people search flow.

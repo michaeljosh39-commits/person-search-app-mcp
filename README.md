@@ -1,62 +1,69 @@
-# Person Search App
+# Jacinto's Person Search
 
-Person Search App is a full-stack Next.js application for managing people records with complete CRUD operations backed by a real database. It is designed for deployment on Vercel and includes the required documentation pages for evaluation.
+A full-stack Next.js project for managing person records with search, create, update, and delete functionality.
 
-## Vercel 
+## Overview
 
-[person-search-app-five.vercel.app](https://person-search-app-five.vercel.app/)
+This app uses the Next.js 16 App Router with server actions for CRUD operations and Prisma ORM for database access. It includes a responsive UI, validation with Zod, and a simple people search flow.
 
-<img width="2559" height="1467" alt="image" src="https://github.com/user-attachments/assets/f8309a04-363b-44c1-bfcc-41231bf4cbe1" />
-<img width="2559" height="1464" alt="image" src="https://github.com/user-attachments/assets/4cc98a9b-6a1e-4136-85fc-5607dcb8d95a" />
+## Pages
 
+- `/` — main user search and CRUD interface
+- `/about` — project architecture and technology details
+- `/github` — repository link and project source
+- `/database` — Prisma model and database documentation
 
-## Live Pages
+## Features
 
-- Main app: `/`
-- About page: `/about`
-- GitHub page: `/github`
-- Database page: `/database`
-
-## What It Does
-
-- Create new person records
-- Read and search existing people from the database
-- Update person details
+- Search people by name
+- Add new person records
+- Edit existing persons
 - Delete records
-- Validate form input before mutations
-- Show a responsive UI that works on desktop and mobile
+- Form validation with React Hook Form and Zod
+- Responsive UI designed for desktop and mobile
 
 ## Tech Stack
 
-- Next.js 16 App Router
+- Next.js 16
 - React 19
 - TypeScript
-- Prisma ORM
-- Neon PostgreSQL
+- Prisma
+- PostgreSQL
 - Tailwind CSS
-- Radix UI components
-- React Hook Form + Zod
+- Radix UI
+- React Hook Form
+- Zod
 
-## Database
+## Local Setup
 
-The app uses Prisma with a PostgreSQL datasource configured through environment variables.
-
-Required variables for Vercel:
-
-- `DATABASE_URL` - Neon connection string used by the app at runtime
-- `DIRECT_URL` - direct Neon connection string used by Prisma migrations and schema tasks
-
-Sample data is seeded through `prisma/seed.ts` so the app has real records available for testing after deployment.
-
-## Local Development
+1. Install dependencies
 
 ```bash
 pnpm install
+```
+
+2. Generate Prisma client
+
+```bash
 pnpm prisma:generate
+```
+
+3. Run the app
+
+```bash
 pnpm dev
 ```
 
-## Production Build
+## Environment Variables
+
+Create a `.env` file with the following values:
+
+- `DATABASE_URL` — database connection string
+- `DIRECT_URL` — direct database connection string for Prisma migrations
+
+## Production
+
+Build and run a production version:
 
 ```bash
 pnpm build
@@ -65,38 +72,11 @@ pnpm start
 
 ## Repository
 
-Public GitHub repository:
+Replace the placeholder below with your repository URL once the project is published:
 
-https://github.com/Shuji0121/person-search-app
+https://github.com/your-username/jacinto-person-search
 
 ## Notes
 
-- The app includes server actions for create, update, and delete operations.
-- The main page reads records from the database and supports selection, editing, and deletion flows.
-- The `/about` page explains the architecture.
-- The `/github` page links back to the public repository.
-- The `/database` page documents the Prisma schema and database structure.
-
-The `MutableDialog` component currently uses a custom `ActionState` type to handle the result of form submissions. However, React 19 introduces built-in support for `ActionState` in Server Actions, which can simplify this implementation. 
-
-#### Improvements to Make:
-- Replace the custom `ActionState` interface with React 19's built-in `ActionState`.
-- Use the `ActionState` directly within the form submission logic to align with React 19 best practices.
-- Refactor error handling and success notifications to leverage React's server-side error handling.
-
-This will be addressed in a future update to ensure the `MutableDialog` component remains aligned with React 19's capabilities.
-
-## Contributing
-
-Contributions are welcome! Please submit a Pull Request with your changes.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-
-## Contact
-
-Callum Bir - [@callumbir](https://twitter.com/callumbir)  
-Project Link: [https://github.com/gocallum/person-search](https://github.com/gocallum/person-search)  
+This project is intended as a personalized portfolio app for managing and searching person records with a modern Next.js stack.
 

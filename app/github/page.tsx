@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
-const REPO_URL = 'https://github.com/Shuji0121/person-search-app'
+const REPO_URL = 'https://github.com/your-username/jacinto-person-search'
 
 export default function GitHubPage() {
   return (

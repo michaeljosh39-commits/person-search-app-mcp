@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Person Search App",
-  description: "A simple search app to find people by name",
+  title: "Jacinto's Person Search",
+  description: "Jacinto's personal people search app with full CRUD and Prisma backend.",
 };
 
 export default function RootLayout({

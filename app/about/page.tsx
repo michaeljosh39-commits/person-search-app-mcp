@@ -11,7 +11,7 @@ function ProjectOverview() {
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="mb-4">
-          Person App is built with Next.js App Router and uses server actions for data mutations.
+          Jacinto's Person Search is built with Next.js App Router and uses server actions for data mutations.
           This keeps Create, Read, Update, and Delete logic close to the UI while maintaining type safety.
         </p>
         <p className="mb-4">
@@ -34,7 +34,7 @@ function SocialLinks() {
   return (
     <div className="flex flex-wrap gap-4">
       <Button asChild>
-        <Link href="https://github.com/Shuji0121/person-search-app" target="_blank" rel="noopener noreferrer">
+        <Link href="https://github.com/your-username/jacinto-person-search" target="_blank" rel="noopener noreferrer">
           <Github className="mr-2 h-4 w-4" /> GitHub
         </Link>
       </Button>
@@ -72,7 +72,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">About Person Search</h1>
+        <h1 className="text-3xl font-bold mb-8">About Jacinto's Person Search</h1>
         <ProjectOverview />
         <DeveloperInfo />
         <Button asChild variant="link" className="mt-4">

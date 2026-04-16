@@ -12,7 +12,7 @@ export default function DatabasePage() {
           </CardHeader>
           <CardContent className="space-y-3">
             <p>
-              The app uses Prisma ORM with Neon PostgreSQL. Prisma Client handles all Create,
+              Jacinto's Person Search uses Prisma ORM with Neon PostgreSQL. Prisma Client handles all Create,
               Read, Update, and Delete operations from server actions.
             </p>
             <p>

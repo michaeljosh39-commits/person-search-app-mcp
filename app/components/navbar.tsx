@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
               <Search className="h-8 w-8 text-primary" aria-hidden="true" />
-              <span className="ml-2 text-lg font-semibold text-foreground">Person Search</span>
+              <span className="ml-2 text-lg font-semibold text-foreground">Jacinto's Person Search</span>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
